@@ -152,6 +152,23 @@ header {
     background-color:var(--title-text-color);
 }
 
+.bg-hero {
+    max-width:1440px;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+    background-image:linear-gradient(
+    rgba(46, 47, 66, 0.5),
+    rgba(46, 47, 66, 0.5)
+    ),
+    url(../imаges/people-office\ 1.jpg);
+    background-color:var(--title-text-color);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+}
+
 .title {
     margin:0 auto;
     margin-top:0;
@@ -226,13 +243,57 @@ header {
 .main-list .main-item:not(:last-child) {
     margin-right:24px;
 }
+
+.adv-icons{
+    display:flex;
+    height:112px;
+    border-radius:4px;
+    background-color: var(--light-color);
+    margin-bottom:8px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.adv-icon{
+    width: 64px;
+    height: 64px;
+}
+
+.main-item {
+    width: 264px;
+    height: 112px;
+    background-image:url(../imаges/fon.jpg);
+}
+
+.main-list .item:nth-child(1)::before{
+    background-image:url(../imаges/antenna\ 1\ .svg);
+    background-size: 64px;
+}
+
+.main-list .item:nth-child(2)::before{
+    background-image:url(../imаges/clock\ 1.svg);
+    background-size: 64px;
+}
+
+.main-list .item:nth-child(3)::before{
+    background-image:url(../imаges/diagram\ 1.svg);
+    background-size: 64px;
+}
+
+.main-list .item:nth-child(4)::before{
+    background-image:url(../imаges/astronaut\ 1.svg);
+    background-size: 64px;
+}
+
 .main-title {
     margin-top:0;
     margin-bottom:8px;
 }
 
 .section-photo {
-    padding-top:0;
+    padding-top:120px;
     padding-bottom:120px;
 }
 
@@ -275,6 +336,40 @@ header {
  .team-list .item:not(:last-child){
      margin-right:24px;
  }
+
+ .social-list{
+    display:flex;
+    
+}
+.team-social-net{
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    padding-top:8px;
+    padding-bottom:32px;
+}
+.soc-item{
+    width: 40px;
+    height: 40px;
+}
+
+.team-social{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    background-color:var(--accent-color);
+    justify-content:center;
+    align-items: center;
+}
+
+.team-social:hover{
+    background-color: var(--an-accent-color);
+}
+.social-icon{
+    width: 16px;
+    height: 16px;
+}
 
 /* footer */
 
