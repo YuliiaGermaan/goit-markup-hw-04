@@ -440,12 +440,13 @@ header {
     color:var(--accent-color)
 }
 
-.media {
-    padding-top: 100px;
-    padding-bottom: 130px;
+.container >.media {
+    display: flex;
+
 }
 
 .media-title{
+    font-weight: 500;
     margin-bottom:16px;
     color:var(--primary-white-color);
 }
@@ -482,6 +483,8 @@ header {
 
     margin-bottom:72px;
     padding:0;
+
+    text-decoration:none;
 }
 
 .portfolio-links .item:not(:last-child){
@@ -519,6 +522,18 @@ header {
     display:flex;
     flex-wrap:wrap;
     gap: 48px 24px;
+}
+
+.portfolio-links{
+    display:block;
+    text-decoration: none;
+    color:var(--primary-text-color);
+}
+
+.portfolio-links:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .list-img .hero-title {
