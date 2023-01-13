@@ -158,8 +158,8 @@ header {
     margin-left:auto;
     margin-right:auto;
     background-image:linear-gradient(
-    rgba(46, 47, 66, 0.5),
-    rgba(46, 47, 66, 0.5)
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
     ),
     url(../imаges/people-office\ 1.jpg);
     background-color:var(--title-text-color);
