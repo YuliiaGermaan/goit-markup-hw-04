@@ -18,6 +18,7 @@
     --accent-color:#4D5AE5;
     --light-color:#F4F4FD;
     --an-accent-color:#404BBF;
+    --light-slate:#8E8F99;
 }
 
 body {
@@ -262,9 +263,8 @@ header {
 }
 
 .main-item {
-    width: 264px;
+    width:calc((100%-72px) /4);
     height: 112px;
-    background-image:url(../imаges/fon.jpg);
 }
 
 .main-list .item:nth-child(1)::before{
@@ -345,8 +345,7 @@ header {
     display:flex;
     justify-content:center;
     gap:24px;
-    padding-top:8px;
-    padding-bottom:32px;
+    margin-top:8px;
 }
 .soc-item{
     width: 40px;
@@ -379,12 +378,8 @@ header {
 }
 
 .customers-banner{
-    display:flex;
-    width: calc((100%-125px) / 6);
+    width: calc((100% - 120px) / 6);
     height: 88px;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imаges/fon2.jpg);
 }
     
 .customers-link{
@@ -443,6 +438,41 @@ header {
 
 .footer-logo-page {
     color:var(--accent-color)
+}
+
+.media {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.media-title{
+    margin-bottom:16px;
+    color:var(--primary-white-color);
+}
+
+.media-list{
+    display:flex;
+    gap:16px;
+}
+
+.media-items{
+    width: 40px;
+    height: 40px;
+
+}
+
+.media-link{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    background-color:var(--primary-text-color);
+    align-items:center;
+    justify-content: center;
+}
+
+.media-link:hover{
+    background-color:#31D0AA;
 }
 
 /* Portfolio */
