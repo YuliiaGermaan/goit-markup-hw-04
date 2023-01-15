@@ -82,6 +82,9 @@ header {
     padding-top:120px;
 }
 
+.container .main-list {
+    padding-top:120px;
+}
 .container-nav {
     display:flex;
     align-items:center;
