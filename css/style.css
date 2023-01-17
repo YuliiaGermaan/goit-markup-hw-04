@@ -82,9 +82,7 @@ header {
     padding-top:120px;
 }
 
-.container .main-list {
-    padding-top:120px;
-}
+
 .container-nav {
     display:flex;
     align-items:center;
@@ -308,6 +306,7 @@ header {
 
 .main-team {
     background-color:var(--light-color);
+    padding-bottom: 110px;
 }
 
 .title-name {
@@ -325,6 +324,10 @@ header {
 .team-name-container{
     padding-top:32px;
     padding-bottom:32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-list{
     display:flex;
@@ -442,7 +445,6 @@ header {
 
 .footer-container {
     display: flex;
-    margin-left: 156px;
 }
 
 .name-logo {
@@ -462,10 +464,6 @@ header {
     margin-left: 120px;
 }
 
-.container >.media {
-    display: flex;
-
-}
 
 .media-title{
     font-weight: 500;
@@ -524,6 +522,7 @@ header {
     padding:12px 24px;
     color:var(--accent-color);
     background-color:var(--light-color);
+    cursor: pointer;
     border:none;
     font-family:inherit;
     border: 1px solid #E7E9FC;
@@ -536,8 +535,8 @@ header {
 .portfolio-buttons:focus {
     color:var(--primary-white-color);
     background-color:var(--accent-color);
-    cursor: pointer;
-    border:1px solid var(--accent-color);
+    border-color:var(--accent-color);
+    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-img {
@@ -548,11 +547,9 @@ header {
 
 
 .img-links{
-    display: flex;
+    display: block;
     text-decoration: none;
     color:var(--primary-text-color);
-
-    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-links:hover {
@@ -567,7 +564,7 @@ header {
 }
 
 
-.portfolio-links:hover{
+.portfolio-buttons:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
